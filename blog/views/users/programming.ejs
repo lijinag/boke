@@ -1,0 +1,38 @@
+<!-- 引入头部 -->
+<% include haen%>
+<div class="col-md-12">
+    <ol class="breadcrumb">
+        <li><a href="#">友情管理</a></li>
+        <li class="active">友情链接</li>
+        <li class="active">友情编辑</li>
+
+      </ol>
+</div>
+<div class="col-md-4">
+    <form action="/users/managementupate"  method="post" class="forms">
+        <input type="hidden" name="_id" value="<%=ept._id%>">
+        <div class="input-group">
+            <span class="input-group-addon">名称</span>
+            <input type="text" class="form-control rbb" name="of" value="<%=ept.of%>">
+        </div>
+        <div class="input-group">
+            <span class="input-group-addon">类型</span>
+            <input type="text" class="form-control rbb" name="type"  value="<%=ept.type%>">
+          
+        </div>
+        <div class="input-group">
+            <span class="input-group-addon">节奏</span>
+            <input type="text" class="form-control rbb" name="rhythm"  value="<%=ept.rhythm%>">
+          
+        </div>
+        <div class="input-group">
+            <span class="input-group-addon ">来自</span>
+            <input type="text" class="form-control rbb" name="from"  value="<%=ept.from%>">
+        </div>
+        <div class="input-group">
+                <input class="inpptu" type="submit" id="dj">
+        </div>
+    </form>
+</div>
+<!-- 引入底部 -->
+<% include footen%>

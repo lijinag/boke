@@ -1,0 +1,30 @@
+
+<!-- 引入头部 -->
+<% include haen%>
+<div class="col-md-12">
+    <ol class="breadcrumb">
+        <li><a href="#">项目管理</a></li>
+        <li class="active">添加项目</li>
+      </ol>
+</div>
+<div class="row ">
+    <div class="col-md-4">
+        <form action="itemInet"  method="post">
+            <div class="input-group">
+                <span class="input-group-addon">项目名称</span>
+                <input type="text" class="form-control" name="name">
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon">描述</span>
+                <input type="text" class="form-control" name="describe">
+            </div>
+            <div class="input-group">
+                    <input class="inpptu" type="submit">
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- 引入底部 -->
+<% include footen%>
+

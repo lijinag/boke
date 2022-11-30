@@ -1,0 +1,35 @@
+<!-- 引入头部 -->
+<% include haen%>
+<div class="col-md-12">
+    <ol class="breadcrumb">
+        <li><a href="#">友情管理</a></li>
+        <li class="active">友情链接</li>
+      </ol>
+</div>
+<div class="col-md-4">
+    <form action="/users/managementInet"  method="post" class="forms">
+        <div class="input-group">
+            <span class="input-group-addon">名称</span>
+            <input type="text" class="form-control rbb" name="of">
+        </div>
+        <div class="input-group">
+            <span class="input-group-addon">类型</span>
+            <input type="text" class="form-control rbb" name="type">
+          
+        </div>
+        <div class="input-group">
+            <span class="input-group-addon">节奏</span>
+            <input type="text" class="form-control rbb" name="rhythm">
+          
+        </div>
+        <div class="input-group">
+            <span class="input-group-addon ">来自</span>
+            <input type="text" class="form-control rbb" name="from">
+        </div>
+        <div class="input-group">
+                <input class="inpptu" type="submit" id="dj">
+        </div>
+    </form>
+</div>
+<!-- 引入底部 -->
+<% include footen%>

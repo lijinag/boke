@@ -1,0 +1,61 @@
+<!-- 引入头部 -->
+<% include haen%>
+    <div class="col-md-12">
+        <ol class="breadcrumb">
+            <li><a href="#">文章管理</a></li>
+            <li class="active">发布文章</li>
+        </ol>
+    </div>
+    <form action="articleInet" method="post">
+        <div class="col-md-4">
+            <div class="input-group" id="input">
+                <span class="input-group-addon">标题</span>
+                <input type="text" class="form-control" name="title">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="input-group" id="input">
+                <span class="input-group-addon">作者</span>
+                <input type="text" class="form-control" name="author">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="input-group" id="input">
+                <span class="input-group-addon">栏目</span>
+                <select name="column" class="form-control">
+                    <% title.forEach(function(val){%>
+                        <option value="<%=val._id%>"><%=val.name%></option>
+                    <%})%>
+                </select>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="input-group" id="input">
+                <span class="input-group-addon">关键字</span>
+                <input type="text" class="form-control" name="words">
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="input-group" id="input">
+                <span class="input-group-addon">描述</span>
+                <input type="text" class="form-control" name="describe">
+            </div>
+        </div>
+        <div class="col-md-12 article">
+         
+            <textarea name="content" id="content"></textarea>
+        </div>
+        <div class="col-md-12">
+            <input type="submit" value="发布文章">
+        </div>
+
+    </form>
+<!-- 复文本编辑器 -->
+<script src="/ueditor/ueditor.config.js"></script>
+<script src="/ueditor/ueditor.all.min.js"></script>
+<script>
+    // 实例化复文本编辑器/
+    var ue=UE.getEditor('content')
+</script>
+    <!-- 引入底部 -->
+    <% include footen%>

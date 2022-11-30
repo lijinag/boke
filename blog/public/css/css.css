@@ -1,0 +1,180 @@
+.biaoqi{
+  padding-left: 20px;
+    color: pink;
+    font-size: 20px;
+    font-family: 楷体;
+}
+input{
+    outline: none;
+
+}
+.input-group-addon{
+  
+    width: 100px;
+}
+input{
+    width: 220px;
+    
+}
+.show{
+    margin-top: 20px;
+}
+.inpptu{
+    width: 300px;
+    height: 40px;
+    margin-top: 10px;
+
+}
+#nan{
+    width: 34px;
+
+}
+#nu{
+    width: 71px;
+}
+.pagination{
+  margin: 20px 450px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+  }
+  a{
+    text-decoration: none;
+  }
+  .nun{
+    list-style: none;
+ 
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+ 
+  
+  }
+  .nu{
+   
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+  }
+ 
+  #foem{
+    width: 184px;
+  }
+  .nun>.iiii{
+    line-height: 30px;
+    width: 100%;
+    border-bottom:2px solid #ccc ;
+    display: flex;
+    justify-content: space-between;
+  }
+  .nun>.iiii:hover{
+    background-color: rgb(30, 224, 65);
+  }
+  .nun>.iiii>.ii{
+  margin-right: 30px;
+  color: black;
+  }
+  ul>li>span{
+    flex: 1;
+    text-align: center;
+  }
+  .oo{
+    margin-left: 30px;
+  }
+  h2{
+    width: 100%;
+  /* width: 1200px; */
+  margin: 82px auto;
+    text-align: center;
+    background-color: #ccc;
+    color: aqua;
+    font-size: 30px;
+  }
+  #tu{
+    width: 200px;
+  }
+  #jum{
+    margin: 50px auto;
+  }
+  
+  #input{
+        width: 100%;
+        margin-top: 20px;
+  }
+.article{
+  margin-top: 20px;
+}
+.rbb{
+  width: 288px !important;
+}
+
+  .red{
+    color: red;
+  }
+
+
+#col{
+  margin: 200px 500px;
+}
+  .com {
+    width: 100%;
+    height: 100%;
+    background: url(../images/登录背景图.webp);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+}
+.inpptu{
+  width: 388px;
+}
+.input-group{
+  margin-top: 10px;
+}
+#yzm{
+  width: 388px;
+}
+.vido{
+  border-radius: 0px;
+
+
+}
+
+
+.cci{
+  padding-left: 0;
+  padding-right: 0;
+}
+.reddot::after{
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  padding: 3px;
+  z-index: 9999999;
+  background: #d9534f;
+  border-radius: 50%;
+  font-size: 0;
+  line-height: 0;
+  border: 1px solid #d43f3a;  
+}
+
+
+
+@media screen and (max-width:767px) { 
+  .cci {
+      padding-left: 15px;
+      padding-right: 15px;
+  }
+}
+
+.ban_740{
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.ban_740>img{
+  width: 100%;
+  height: 90px;
+}

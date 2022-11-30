@@ -1,0 +1,59 @@
+<!-- 引入头部 -->
+<% include haen%>
+  <div class="col-md-12">
+    <ol class="breadcrumb">
+      <li><a href="#">友情管理</a></li>
+      <li class="active">友情链接</li>
+      <li class="active">友情列表</li>
+    </ol>
+  </div>
+  <h2>友情名单</h2>
+  <ul class="nun">
+    <li class="iiii">
+      <span class="oo">名称</span>
+      <span class="oo">类型</span>
+      <span class="oo">节奏</span>
+      <span class="oo">来自</span>
+      <span class="oo">发布时间</span>
+      <span class="oo">操作</span>
+      <span class="oo">修改</span>
+
+    </li>
+   <% title.forEach(function(arr){%>
+    <li class="iiii">
+      <span class="oo"><%=arr.of%></span>
+      <span class="oo"><%=arr.type%></span>
+      <span class="oo"><%=arr.rhythm%></span>
+      <span class="oo"><%=arr.from%></span>
+      <span class="oo"><%=arr.ctime.toLocaleString()%></span>
+      <span>
+        <a href="/users/programming/<%=arr._id%>">编辑</a>
+      </span>
+      <span>
+      <a href="/users/scattered/<%=arr._id%>" onclick="return confirm('您确定要删除该人员的信息吗')">删除</a> 
+      </span>
+    </li>
+    <%})%>
+    <nav aria-label="Page navigation" class="center">
+      <ul class="pagination">
+        <li>
+          <a href="/users/managementlist?page=<%=page-1%>" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <% for(var i=1;i<=pageMax;i++){%>
+          <li class="<%=page==i?'active':''%>">
+            <a href="/users/managementlist?page=<%=i%>"><%=i%></a>
+          </li>
+          <%}%>
+            <li>
+              <a href="/users/managementlist?page=<%=-(-page-1)%>" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li> 
+      </ul>
+    </nav>
+
+  </ul>
+  <!-- 引入底部 -->
+  <% include footen%>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/css/css.css">
+</head>
+<body>
+    <div class="com">
+        <div class="col-md-4" id="col">
+            <form action="/users/pageInet"  method="post">
+                <div class="input-group">
+                    <span class="input-group-addon">账号</span>
+                    <input type="text" class="form-control rbb" name="account">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon">密码</span>
+                    <input type="password" class="form-control rbb" name="password">
+                </div>
+                <div class="input-group" id="yzm">
+                    <span class="input-group-addon">验证码</span>
+                    <input type="text" class="form-control" name="code">
+                    <div class="input-group-addon">
+                        <a href="/users/registered">
+                        <img src="/users/code" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="input-group">
+                        <input class="inpptu" type="submit" id="dj">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+<script src="/js/jquery-1.9.1/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>

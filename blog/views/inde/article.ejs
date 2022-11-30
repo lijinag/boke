@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>博客园界面</title>
+    <link rel="stylesheet" href="../css/blog.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/css.css">
+</head>
+
+<body>
+    <!--左侧菜单栏-->
+    <div class="blog-left">
+        <div class="blog-avatar">
+            <img src="../images/登录背景图.webp" alt="">
+        </div>
+        <div class="blog-title">
+            <span>Luz的博客</span>
+        </div>
+        <div class="blog-desc">
+            <span>Luz很懒,什么都没有留下</span>
+        </div>
+        <div class="blog-link">
+            <ul>
+                <li><a href="/">首页</a></li>
+                <li><a href="/column/">栏目行</a> </li>
+                <li><a href="/body/">主体内容</a> </li>
+            </ul>
+        </div>
+        <div class="blog-link"></div>
+        <div class="blog-item"></div>
+    </div>
+    <!--左侧结束-->
+    <!--右侧开始-->
+    <div class="blog-right">
+        <nav class="navbar navbar-inverse vido">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand text-muted hidden-sm" href="/column/">首页</a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse cci" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav uiy">
+                        <li><a href="/project/">项目</a></li>
+                        <li><a href="/article/">文章</a></li>
+                        <li><a href="/system" class="reddot">系统</a></li>
+                        <li><a href="/friendship/" class="reddot">友情</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="col-md-12">
+            <ol class="breadcrumb">
+                <li><a href="#">管理</a></li>
+                <li class="active">项目</li>
+                <li class="active">文章</li>
+            </ol>
+        </div>
+        <h2>文章</h2>
+        <ul class="nun">
+            <li class="iiii">
+                <span class="oo">名称</span>
+                <span class="oo">作者</span>
+                <span class="oo">栏目</span>
+                <span class="oo">发布时间</span>
+            </li>
+            <% users.forEach(function(arr){%>
+                <li class="iiii">
+                    <span class="oo">
+                        <%=arr.title%>
+                    </span>
+                    <span class="oo">
+                        <%=arr.author%>
+                    </span>
+                    <span class="oo">
+                        <%=arr.column.name%>
+                    </span>
+                    <span class="oo">
+                        <%=arr.ctime.toLocaleString()%>
+                    </span>
+                </li>
+                <%})%>
+        </ul>
+    </div>
+    <!--右侧结束-->
+</body>
+</html>
+<script src="../js/jquery-1.9.1/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>

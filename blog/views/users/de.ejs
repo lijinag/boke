@@ -1,0 +1,63 @@
+<% include haen%>
+  <div class="col-md-12">
+    <ol class="breadcrumb">
+      <li><a href="#">文章管理</a></li>
+      <li class="active">发布文章</li>
+      <li class="active">文章内容</li>
+    </ol>
+  </div>
+  <h2>文章名单</h2>
+  <ul class="nun">
+    <li class="iiii">
+      <span class="oo">名称</span>
+      <span class="oo">作者</span>
+      <span class="oo">栏目</span>
+      <span class="oo">发布时间</span>
+      <span class="oo">操作</span>
+    </li>
+    <% users.forEach(function(arr){%>
+      <li class="iiii">
+        <span class="oo">
+          <%=arr.title%>
+        </span>
+        <span class="oo">
+          <%=arr.author%>
+        </span>
+        <span class="oo">
+          <%=arr.column.name%>
+        </span>
+        <span class="oo">
+          <%=arr.ctime.toLocaleString()%>
+        </span>
+        <span>
+          <a href="/users/tor/<%=arr._id%>">编辑</a>
+        </span>
+        <span>
+          <a href="/users/tete/<%=arr._id%>" onclick="return confirm('您确定要删除该人员的信息吗')">删除</a>
+        </span>
+      </li>
+      <%})%>
+        <nav aria-label="Page navigation" class="center">
+          <ul class="pagination">
+            <li>
+              <a href="/users/de/<%=users.page==1?1:users.page-1%>" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <% for(var i=1;i<=users.pageMax;i++){%>
+              <li class="<%=users.page==i?'active':''%>">
+                <a href="/users/de/<%= i%>">
+                  <%=i%>
+                </a>
+              </li>
+              <%}%>
+                <li>
+                  <a href="/users/de/<%=users.page==users.pageMax?users.pageMax:users.page*1+1%>" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li> 
+          </ul>
+        </nav>
+  </ul>
+  <!-- 引入底部 -->
+  <% include footen%>

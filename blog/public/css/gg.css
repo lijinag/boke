@@ -1,0 +1,352 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/* 设置整体页面高度 */
+html,body{
+    height:100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* 上方导航栏 */
+.nav{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(51,51,51,.4);
+    color:#fff;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+/* 导航栏中的图标 */
+.nav img{
+    width: 40px;
+    margin-left: 30px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+/* 导航栏中的占位器 */
+.nav .spacer{
+    width: 70%;
+}
+/* 导航栏中的按钮 */
+.nav a{
+    color:#fff;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+/* 页面内容容器, 正文部分 */
+.container{
+    /* 使用 calc 计算高度 */
+    height: calc(100% - 50px);
+    /* 计算正文高度 */
+    width:1200px;
+    /* 水平居中 */
+    margin: 0 auto;
+    /* 使用弹性布局 */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* 左侧部分, 用来放置用户信息 */
+.container-left{
+    height: 100%;
+    width: 200px;
+}
+/* 右侧部分, 用来放置正文 */
+.container-right{
+    height: 100%;
+    /* 和左侧部分中间留出 5px 间隙 */
+    width:995px;
+    /*如果内容溢出就加滚动条*/
+    overflow: auto;
+    background-color: rgba(255,255,255,.8);
+    border-radius: 10px;
+}
+
+/* 展示用户信息的卡片 */
+.card{
+    background-color: rgba(255,255,255,.8);
+    border-radius: 10px;
+    padding: 30px;
+}
+/* 用户头像 */
+.card img{
+    width: 140px;
+    border-radius: 50%;
+}
+/* 用户名 */
+.card h3{
+    text-align: center;
+    padding: 30px;
+}
+/* 用户 github 链接 */
+.card a{
+    display: block;
+    text-align: center;
+    color: #999;
+    text-decoration: none;
+    padding: 10px;
+}
+/* 展示文章数目的面板 */
+.card .counter{
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* 表示一篇博客 */
+.blog{
+    width: 100%;
+    padding: 30px 20px;
+    border-bottom: 2px dotted black;
+}
+/* 博客的标题 */
+.blog .title{
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px 0;
+}
+/* 博客的摘要 */
+.blog .desc{
+    color: #000;
+    text-indent: 2em;
+    margin-top:20px;
+}
+/* 博客的日期 */
+.blog .date{
+    color: #008000;
+    margin-top: 10px;
+    text-align: center;
+}
+/* 查看详情 按钮 */
+.blog .detail{
+    display: block;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px auto 0 auto;
+    border: 2px solid black;
+    /* 给颜色加上过渡效果，动画的持续时间是多久 */
+    transition: all 0.3s;
+}
+/* 查看详情按钮的鼠标 hover 效果 */
+/*：hover:伪类选择器，意为鼠标滑过时应用该样式*/
+.blog .detail:hover{
+    background-color: #000;
+    color: #fff;
+}
+p{
+    text-align: center;
+}
+
+/* 博客正文容器 */
+.blog-content{
+    padding: 30px;
+    line-height: 2em;
+}
+/* 博客标题 */
+.blog-content h3{
+    text-align: center;
+    padding: 20px 0;
+}
+/* 博客日期 */
+.blog-content .date {
+    color:#008000;
+    padding: 10px 0;
+    text-align: center;
+}
+/* 博客内容段落 */
+.blog-content p{
+    text-indent: 2em;
+    padding: 10px 0;
+}
+
+ 
+
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+body {
+    background-color: #4B7C99;
+}
+
+#bigbox {
+   width: 100%;
+    margin: 0 auto;
+}
+
+#banner {
+    /* width: 1000px; */
+    font-size: 0px;
+}
+
+
+
+nav {
+    background-color: #CCD0D9;
+    /* width: 1000px; */
+    height: 60px;
+}
+
+nav a {
+    text-decoration: none;
+    line-height: 60px;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: #020C16;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #1a9be6;
+}
+
+.dangqian {
+    color: #1a9be6;
+
+}
+
+#main {
+    height: 490px;
+    /* width: 1000px; */
+    margin: 0 auto;
+    background-color: #86aacb;
+}
+
+#main_left {
+   
+    width: 300px;
+    display: inline-block;
+    background-color: #86aacb;
+   
+}
+
+h2 {
+    box-sizing: border-box;
+    padding-left: 10px;
+    font-size: 20px;
+    line-height: 30px;
+    background-color: #03151F;
+    color: #CCD0D9;
+}
+
+#main_left img {
+    width: 300px;
+}
+
+#main_left p {
+    margin-left: 10px;
+    line-height: 40px;
+}
+
+#main_left span {
+    font-weight: bold;
+}
+
+#main_right {
+    position: relative;
+    width: 680px;
+    margin-left: 20px;
+    display: inline-block;
+    height: 200px;
+}
+
+#main_right img {
+    position: absolute;
+    width: 260px;
+    right: 0px;
+    top: 30px;
+}
+
+#main_right p {
+    width: 400px;
+    display: inline-block;
+    margin-left: 10px;
+    text-indent: 32px;
+    line-height: 30px;
+    margin-top: 10px;
+}
+
+#luxing {
+    background-color: #86aacb;
+    /* width: 1000px; */
+}
+
+#luxing div {
+    font-size: 0px;
+}
+
+#picture {
+    font-size: 0px;
+    display: inline-block;
+    margin-left:18px;
+    margin-right: 25px;
+    margin-top: 25px;
+}
+
+#picture img {
+    width: 200px;
+}
+
+#picture p {
+    font-size: 16px;
+    text-align: center;
+    line-height: 60px;
+
+}
+
+footer {
+    line-height: 60px;
+    font-size: 14px;
+    text-align: center;
+    background-color: #CCD0D9;
+}
+
+#main_right ul li {
+    width: 660px;
+    margin-left: 10px;
+    font-size: 12px;
+    margin-top: 10px;
+    border-bottom: 1px dotted #ccc;
+    padding-bottom: 10px;
+}
+
+#main_right ul li span {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#liuyan {
+    width: 660px;
+    margin-left: 10px;
+    margin: 20px;
+}
+
+#liuyan span {
+    display: inline-block;
+    width: 80px;
+    line-height: 40px;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    margin-left: 80px;
+}
+
+
+

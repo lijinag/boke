@@ -1,0 +1,46 @@
+
+<!-- 引入头部 -->
+<% include haen%>
+<div class="col-md-12">
+    <ol class="breadcrumb">
+        <li><a href="#">系统管理</a></li>
+        <li><a href="#">管理注册</a></li>
+        <li><a href="#">修改信息</a></li>
+      </ol>
+</div>
+    <div class="col-md-4">
+        <form action="/users/upda"  method="post" class="forms">
+            <input type="hidden" name="_id" value="<%=apptin._id%>">
+            <div class="input-group">
+                <span class="input-group-addon">账号</span>
+                <input type="text" class="form-control rbb" name="account"  id="name" onblur="nameCheck()" value="<%=apptin.account%>">
+                <span class="name">2-4位中文组成</span>
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon">旧密码</span>
+                <input type="password" class="form-control rbb" name="password" id="pwd" onblur="pwdCheck()">
+                <span class="pwd">请输入6-12位密码</span>
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon ">新密码</span>
+                <input type="password" class="form-control rbb" name="confirm"  id="pwd1" onblur="pwdSure()">
+                <span class="pwd1">请再次输入密码</span>
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon">验证码</span>
+                <input type="text" class="form-control" name="code">
+                <div class="input-group-addon">
+                    <a href="/users/registered">
+                    <img src="/users/code" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="input-group">
+                    <input class="inpptu" type="submit">
+            </div>
+        </form>
+    </div>
+
+<!-- 引入底部 -->
+<% include footen%>
+
